@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forma de Pagamento:"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crédito/Débito"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:id="@+id/txtForma"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cartão: "
+        android:textSize="15dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNumeroCartao"
+        android:inputType="number"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/edtNumeroCartao"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSenha"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/edtNumeroCartao"
+        android:layout_alignLeft="@+id/edtNumeroCartao"
+        android:layout_alignStart="@+id/edtNumeroCartao" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:id="@+id/btnConfirmar"
+        android:layout_below="@+id/edtSenha"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_marginBottom="10dp"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btnCancelar"
+        android:layout_below="@+id/edtSenha"
+        android:layout_toRightOf="@+id/btnConfirmar"
+        android:layout_toEndOf="@+id/btnConfirmar" />
+</RelativeLayout>

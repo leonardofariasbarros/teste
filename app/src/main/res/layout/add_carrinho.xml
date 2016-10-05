@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade:"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textMenssagem"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgCarrinho"
+        android:layout_alignBottom="@+id/edtQtd"
+        android:src="@drawable/ic_add_shopping_cart_black_24dp"
+        android:layout_toLeftOf="@+id/textMenssagem"
+        android:layout_toStartOf="@+id/textMenssagem"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="Ok"
+        android:id="@+id/btnOk"
+        android:layout_alignBottom="@+id/edtQtd"
+        android:layout_toRightOf="@+id/edtQtd"
+        android:layout_toEndOf="@+id/edtQtd"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtQtd"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/textMenssagem"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
